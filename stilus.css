@@ -1,0 +1,45 @@
+* { /* html oldalon mindenre vonatkozik*/
+    font-family: 'Calibri', Garamond, 'Comic Sans MS';
+    padding: 0px; /*nincs margo*/
+}
+
+main {
+    width: 80%;
+    max-width: 852px; /*maximum szélesség*/
+    margin: auto; /* középre helyezi a maint */
+}
+
+
+
+/*Reszponzivitás*/
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "n n"
+    "h h"
+    "ar as"
+    "f f";
+
+}
+
+nav {
+    grid-area: n;
+}
+
+header {
+    grid-area: h;
+}
+
+article {
+    grid-area: ar;
+}
+
+aside {
+    grid-area: as;
+}
+
+footer {
+    grid-area: f;
+}

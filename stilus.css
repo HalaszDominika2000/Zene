@@ -9,6 +9,39 @@ main {
     margin: auto; /* középre helyezi a maint */
 }
 
+article {
+    border: 1px solid #999658; /*bekereteztük a szöveget*/
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Reszponzivitás*/

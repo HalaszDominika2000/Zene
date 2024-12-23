@@ -14,6 +14,41 @@ article {
     padding: 5px;
 }
 
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 90px 90px 90px 90px 90px; /*amennyi li tag van ebben az esetben 5db*/
+    gap: 100px;
+    text-align: center;
+    background-color: RGB(62, 144, 133);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+body {
+    background-image: url(kepek/Zene_uj_hatterkep.jpg); /* Háttérkép hozzáadása*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+li a {
+    text-decoration: none;
+    color: white; /* Betű színét fehérre állítottuk*/
+    font-family: 'Margarine',cursive; 
+    
+}
+
+li {
+    border: 1px solid grey;
+}
+footer {
+    text-align: center;
+}
+
+li a:hover { /* csak a betűk színe fog változni ha felé viszem az egeret*/
+    color: rgb(222, 10, 222);
+}
 
 
 

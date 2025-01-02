@@ -1,45 +1,49 @@
-* {
-    /* html oldalon mindenre vonatkozik*/
+* { /* html oldalon mindenre vonatkozik*/
     font-family: 'Calibri', Garamond, 'Comic Sans MS';
-    padding: 0px;
-    /*nincs margo*/
+    padding: 0px; /*nincs margo*/
     box-sizing: border-box;
 }
 
 main {
     width: 80%;
-    max-width: 852px;
-    /*maximum szélesség*/
-    margin: auto;
-    /* középre helyezi a maint */
+    max-width: 852px; /*maximum szélesség*/
+    margin: auto; /* középre helyezi a maint */
     border: 1px solid gray;
 }
 
 article {
-    border: 1px solid #999658;
-    /*bekereteztük a szöveget*/
+    border: 1px solid #999658; /*bekereteztük a szöveget*/
     padding: 5px;
+
+}
+
+nav { 
+    background-color: RGB(62, 144, 133);
+    text-align: center;
+    margin-top: 3px;
 }
 
 nav ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 90fr 90fr 90fr 90fr 90fr;
-    /*amennyi li tag van ebben az esetben 5db*/
+    grid-template-columns: 90fr 90fr 90fr 90fr 90fr; /*amennyi li tag van ebben az esetben 5db*/
     gap: 5px;
     /* Távolság a lik között */
-    background-color: RGB(62, 144, 133);
     /* Jobb irányba viszi a bal oldalró padding-left*/
     /* padding-right: Jobbról balra viszi*/
+    margin: 0px;
 }
 
 nav li {
     text-align: center;
+    text-transform: uppercase; /* Nagybetűssé alakít*/
+    font-size: 18px; /*Betűméret beállítása*/
+    height: 45%;
+    
 }
 
 body {
-    background-image: url(kepek/Zene_uj_hatterkep.jpg);
-    /* Háttérkép hozzáadása*/
+    background-image: url(kepek/Zene_uj_hatterkep.jpg); /* Háttérkép hozzáadása*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,11 +51,8 @@ body {
 
 nav li a {
     text-decoration: none;
-    color: white;
-    /* Betű színét fehérre állítottuk*/
-    font-family: 'Margarine', cursive;
-    text-transform: uppercase;
-    /* Nagybetűssé alakít*/
+    color: white; /* Betű színét fehérre állítottuk*/
+    font-family: 'Margarine',cursive;
 }
 
 /* Fent jobb lent bal: margin, padding*/
@@ -67,6 +68,16 @@ li a:hover {
 
 header img {
     width: 100%;
+}
+
+h1, h3 {
+    border-top: 1px dotted #5a4535;
+    border-bottom: 1px dotted #5a4535; /* Dotter az a pontozott aláhúzás*/
+    text-transform: uppercase; /* Nagybetűssé alakít*/
+    font-family: 'Margarine',cursive;
+    color: darkcyan;
+    font-weight: bold; /*Vastagbetűssé alakítja a szöveget*/
+    background-color: rgba(190,165,50,0.5); /* Betűk háttérszíne ebben az esetben*/
 }
 
 

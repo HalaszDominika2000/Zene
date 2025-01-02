@@ -14,7 +14,15 @@ main {
 article {
     border: 1px solid #999658; /*bekereteztük a szöveget*/
     padding: 5px;
+    background-color: rgba(189,183,120,0.5); /* Az egész article háttérszínét állítottuk be*/
 
+}
+
+p {
+    color: #5a4535;
+    text-align: justify; /* Szöveg sorkizárt kialakítása justifly*/
+    font-family: 'Calibri', Garamond, 'Comic Sans MS';
+    font-size: 12px; /* Betűméret beállítása*/
 }
 
 nav { 
@@ -68,6 +76,11 @@ li a:hover {
 
 header img {
     width: 100%;
+}
+
+header {
+   /* height: 112px; */
+    margin: 3px;
 }
 
 h1, h3 {

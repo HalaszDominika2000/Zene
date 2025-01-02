@@ -24,7 +24,7 @@ article {
 nav ul {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 90px 90px 90px 90px 90px;
+    grid-template-columns: 90fr 90fr 90fr 90fr 90fr;
     /*amennyi li tag van ebben az esetben 5db*/
     gap: 5px;
     /* Távolság a lik között */
@@ -65,6 +65,10 @@ li a:hover {
     color: rgb(222, 10, 222);
 }
 
+header img {
+    width: 100%;
+}
+
 
 
 
@@ -102,6 +106,7 @@ main {
     grid-template-areas:
         "n n"
         "h h"
+        "b b"
         "ar as"
         "f f";
 
@@ -113,6 +118,10 @@ nav {
 
 header {
     grid-area: h;
+}
+
+.bevezeto {
+    grid-area: b;
 }
 
 article {
@@ -134,6 +143,7 @@ footer {
         grid-template-areas:
             "n"
             "h"
+            "b"
             "ar"
             "as"
             "f";
@@ -142,7 +152,7 @@ footer {
     nav ul {
         list-style-type: none;
         display: grid;
-        grid-template-columns: 90px; /* Ebben az esetben 1 db elég*/
+        grid-template-columns: 90fr; /* Ebben az esetben 1 db elég*/
         /*amennyi li tag van ebben az esetben 5db*/
         gap: 5px;
         /* Távolság a lik között */
